@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "johnny-five": "^1.4.0",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0"
+  },
+  "name": "socket-led",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Miguelerja <miguelerja@gmail.com>",
+  "license": "MIT"
+}
