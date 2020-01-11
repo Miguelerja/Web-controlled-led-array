@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>IOT Leds</title>
 </head>
 <body>
@@ -13,33 +13,36 @@
     <p class="led-label">green</p>
     <div class="slidecontainer">
       <p class="value-label">1</p>
-        <input type="range" min="1" max="255" value="125" class="slider">
+        <input type="range" min="1" max="255" value="125" class="slider" id="green">
       <p class="value-label">255</p>
     </div>
     <p class="led-label">blue</p>
     <div class="slidecontainer">
       <p class="value-label">1</p>
-        <input type="range" min="1" max="255" value="125" class="slider">
+        <input type="range" min="1" max="255" value="125" class="slider" id="blue">
       <p class="value-label">255</p>
     </div>
     <p class="led-label">yellow</p>
     <div class="slidecontainer">
       <p class="value-label">1</p>
-        <input type="range" min="1" max="255" value="125" class="slider">
+        <input type="range" min="1" max="255" value="125" class="slider" id="yellow">
       <p class="value-label">255</p>
     </div>
     <p class="led-label">red</p>
     <div class="slidecontainer">
       <p class="value-label">1</p>
-        <input type="range" min="1" max="255" value="125" class="slider">
+        <input type="range" min="1" max="255" value="125" class="slider" id="red">
       <p class="value-label">255</p>
     </div>
     <p class="led-label">white</p>
     <div class="slidecontainer">
       <p class="value-label">1</p>
-        <input type="range" min="1" max="255" value="125" class="slider">
+        <input type="range" min="1" max="255" value="125" class="slider" id="white">
       <p class="value-label">255</p>
     </div>
   </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/client.js"></script>
 </body>
 </html>
