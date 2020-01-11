@@ -18,6 +18,4 @@ board.on('ready', () => {
   const greenLed = new Led({
     pin: 3,
   });
-
-    
 });

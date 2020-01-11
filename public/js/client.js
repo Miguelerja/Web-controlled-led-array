@@ -1,11 +1,10 @@
 const socket = io(window.location.hostname + ':' + 3000);
 
-console.log('socket');
-socket.on('connection', () => {
-  socket.emit('join', 'Client is connected!');
-});
+const sliders = document.getElementsByClassName('slider');
 
-socket.on('news', function (data) {
-  console.log(data);
-  socket.emit('my other event', { my: 'data' });
+[...sliders].forEach(slider => {
+  slider.addEventListener('change', () => {
+    const value = slider.value;
+    socket.emit(`${slider.id} led value`, value);
+  });
 });
